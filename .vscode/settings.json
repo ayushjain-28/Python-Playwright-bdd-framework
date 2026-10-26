@@ -1,0 +1,12 @@
+{
+  "python.envFile": "${workspaceFolder}\\.env.prod",
+  "python.testing.pytestArgs": [
+    "tests"
+  ],
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "gherkinRunner.runCommand": "python tools/run_gherkin_scenario.py",
+  "gherkinRunner.stripTagPrefix": true,
+  "gherkinRunner.showCodeLens": true,
+  "python-envs.defaultEnvManager": "ms-python.python:system"
+}

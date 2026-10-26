@@ -1,0 +1,47 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Test: Chromium",
+      "type": "process",
+      "command": "python",
+      "args": ["-m", "pytest", "-q"],
+      "options": {
+        "env": {
+          "BROWSER": "chromium"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Test: Firefox",
+      "type": "process",
+      "command": "python",
+      "args": ["-m", "pytest", "-q"],
+      "options": {
+        "env": {
+          "BROWSER": "firefox"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Test: WebKit",
+      "type": "process",
+      "command": "python",
+      "args": ["-m", "pytest", "-q"],
+      "options": {
+        "env": {
+          "BROWSER": "webkit"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Test: All Browsers",
+      "dependsOn": ["Test: Chromium", "Test: Firefox", "Test: WebKit"],
+      "dependsOrder": "sequence",
+      "problemMatcher": []
+    }
+  ]
+}

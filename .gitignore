@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+.Python
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+pip-wheel-metadata/
+.coverage
+.coverage.*
+htmlcov/
+allure-results/
+
+# Config / secrets
+.env
+.env.*
+!.env.example
+
+# Test artifacts
+artifacts/
+logs/
+reports/
+playwright-report/
+test-results/
+blob-report/
+coverage.xml
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+
+# Build output
+build/
+dist/
+wheels/
+site/
